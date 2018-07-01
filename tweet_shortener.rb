@@ -59,9 +59,11 @@ end
 def shortened_tweet_truncator(tweet)
   shortened_tweet = ""
   shortened_tweet = word_substituter(tweet)
-  binding.pry
+  
   if shortened_tweet.length > 140 
       return shortened_tweet[0..140]
+      
+    binding.pry
   else 
       return shortened_tweet
   end 
